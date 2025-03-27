@@ -1,0 +1,13 @@
+<div class="project-card">
+    <div class="project-header">
+        <h3>{{ project.name }}</h3>
+        <span class="status status-{{ project.status|lower }}">{{ project.status }}</span>
+    </div>
+    <div class="project-body">
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="width: {{ project.completion }}%"></div>
+        </div>
+        <p>Completion: {{ project.completion }}%</p>
+        <p>Timeline: {{ project.timeline }}</p>
+    </div>
+</div>
